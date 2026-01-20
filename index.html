@@ -1,1 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AD-13 · Uso de Componentes Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Tarea 5 -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">MiSitio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index2.html">Index2</a>
+            </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
 
+    <div class="container my-4">
+        <!-- Tarea 2 -->
+        <section class="mb-4">
+            <button class="btn btn-danger" data-bs-toggle="collapse" data-bs-target="#alerta">El Botón</button>
+
+            <div id="alerta" class="alert alert-warning alert-dismissible fade show mt-3" role="alert">
+                Alerta, alguien presionó el botón
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        </section>
+
+        <!-- Tarea 3 -->
+        <section class="mb-4">
+            <div class="row text-center">
+                <div class="col-2 bg-light text-dark p-2">el lado izquierdo</div>
+                <div class="col-8 bg-secondary text-white p-2">el lado central</div>
+                <div class="col-2 bg-light text-dark p-2">el lado derecho</div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col text-center bg-dark text-white p-2">Pie de página</div>
+            </div>
+        </section>
+
+        <!-- Tarea 4 -->
+        <section class="mb-4">
+            <form>
+                <div class="mb-3">
+                <label for="email" class="form-label">Correo electrónico</label>
+                <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com">
+                </div>
+                <div class="mb-3">
+                <label for="mensaje" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="mensaje" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
